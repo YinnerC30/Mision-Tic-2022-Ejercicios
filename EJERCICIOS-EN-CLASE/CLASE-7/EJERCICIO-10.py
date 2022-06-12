@@ -37,9 +37,13 @@ def calcular_dia_semana(fechan: str):
     print("Esta es",B)
     
     # Hallo C
-    C = 0
-    if año % 4 == 0 and mes == 2 or mes == 1:
-        C = -1
+    modulo = año % 4
+    if modulo == 0 :
+        if mes == 2 or mes == 1:
+            C = -1
+    else:
+        C = 0
+
     print("Esta es c",C)
     
     # print("esta es c",C)
@@ -88,4 +92,4 @@ def calcular_dia_semana(fechan: str):
     mensaje = f"Ese día fue {dian}"
     return mensaje
     
-print(calcular_dia_semana("2022-11-30"))
+print(calcular_dia_semana("2021-02-22"))
