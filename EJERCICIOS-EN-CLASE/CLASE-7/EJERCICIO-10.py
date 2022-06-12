@@ -1,4 +1,4 @@
-def calcular_dia_nacimiento(fechan: str):
+def calcular_dia_semana(fechan: str):
     """
 
     Args:
@@ -12,11 +12,11 @@ def calcular_dia_nacimiento(fechan: str):
     mes = int(fechan[5:7])
     dia = int(fechan[8:])
     
-    # print(fechan)
-    # print("Siglo",siglo)
-    # print("año",año)
-    # print("mes",mes)
-    # print("dia",dia)
+    print(fechan)
+    print("Siglo",siglo)
+    print("año",año)
+    print("mes",mes)
+    print("dia",dia)
     
     # Hallo A
     if siglo == 20:
@@ -30,18 +30,18 @@ def calcular_dia_nacimiento(fechan: str):
         formula = (-2*pocision)
     
     A = formula
-    # print(A)
+    print("Esta es a",A)
     
     # Hallo B
-    B = (año * 0.25) + año
-    # print(B)
+    B = int((año * 0.25) + año)
+    print("Esta es",B)
     
     # Hallo C
+    C = 0
     if año % 4 == 0 and mes == 2 or mes == 1:
         C = -1
-    else:
-        C = 0
-        
+    print("Esta es c",C)
+    
     # print("esta es c",C)
     # Hallo D
     if mes == 1 or mes == 10:
@@ -58,16 +58,16 @@ def calcular_dia_nacimiento(fechan: str):
         D = 1
     if mes == 9 or mes == 12:
         D = 4
-    # print(D)
+    print("Esta es d",D)
     
     # Hallo E
     E = dia
-    # print(E)
+    print("Esta es E",E)
     
     # Hallo R
     R = int((A + B + C + D + E) % 7)
     
-    # print(R)
+    print("Esta es R",R)
     # print(type(R))
     
     if R == 0:
@@ -88,6 +88,4 @@ def calcular_dia_nacimiento(fechan: str):
     mensaje = f"Ese día fue {dian}"
     return mensaje
     
-print(calcular_dia_nacimiento("2004-02-29"))
-
-
+print(calcular_dia_semana("2022-11-30"))
