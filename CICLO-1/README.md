@@ -8,7 +8,7 @@ César Augusto Díaz Arriaga
 * [Reto 2](RETOS-CICLO-1/RETO-2/)
 * [Reto 3](RETOS-CICLO-1/RETO-3/)
 * [Reto 4](RETOS-CICLO-1/RETO-4/)
-* [Reto 5](RETOS-CICLO-1/RETO-/5)
+* [Reto 5](RETOS-CICLO-1/RETO-5/)
 
 ## EJERCICIOS DE LAS CLASES
 
